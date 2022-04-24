@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Women in Art History</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="SampleCSSGallery.css">
+</head>
+
+
+<body>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><span>Art Movements</span>
+			<ul>
+				<li><a href="artscrafts.html">Arts and Crafts</a></li>
+				<li><a href="artdeco.html">Art Deco</a></li>
+				<li><a href="artnouveau.html">Art Nouveau</a></li>
+				<li><a href="bauhaus.html">Bauhaus</a></li>
+				<li><a href="contemporary.html">Contemporary</a></li>
+				<li><a href="dada.html">Dada</a></li>
+				<li><a href="popart.html">Pop Art</a></li>
+				<li><a href="surrealism.html">Surrealism</a></li>
+			</ul>	
+			</li>
+		<li><span>Artists</span>
+			<ul>
+				<li><a href="popart.html">Evelyne Axell</a></li>
+				<li><a href="Bauhaus.html">Friedl Dicker-Brandeis</a></li>
+				<li><a href="Dada.html">Hannah Hoch</a></li>
+				<li><a href="ArtDeco.html">Tamara de Lempicka</a></li>
+				<li><a href="Contemporary.html">Emily May Smith</a></li>
+				<li><a href="Surrealism.html">Dorthea Tanning</a></li>
+				<li><a href="ArtsCrafts.html">Phoebe Anna Traquair</a></li>
+				<li><a href="ArtNouveau.html">Gerda Wegener</a></li>
+			</ul>	
+		</li>
+		<li><a href="resources.html">Resources</a></li>
+		<li><a href="aboutme.html">About Me</a></li>
+	</ul>
+</nav>	
+<div id="ResDiv1">
+<header>
+	<h1>Women in Art History</h1>
+</header>
+</div>
+
+<div id="HomeDiv1">
+<p>This is a test. </p>
+
+
+<!--SLIDESHOW GALLERY CODE-->
+
+<div id="GalDiv1">
+
+<h2 style="text-align:center">Slideshow Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+    <img src="Guerrilla-Girls.jpg" style="width:100%" alt="Guerrilla Girls Billboard">
+	<div class="text">Guerrilla Girls Billboard</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+    <img src="TheGreatWallofVagina_Jaime-McCartney.jpg" style="width:100%" alt="The Great Wall of Vagina">
+	<div class="text">The Great Wall of Vagina - Jaime McCartney</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+    <img src="yayoi_kusama-exhibition-2015.jpg" style="width:100%" alt="Yayoi Kusama">
+	<div class="text">Yayoi Kusama</div>
+  </div>
+    
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+    <img src="Katharina-Cibulka.jpeg" style="width:100%" alt="Katharina Cibulka">
+	<div class="text">Katharina Cibulka Embroidered Message</div>
+  </div>
+     
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+
+  
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--FOOTER-->
+<footer>
+	&copy; Copyright 2022 Linda Johnson<br>
+</footer>
+
+
+</body>
+</html>
