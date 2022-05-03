@@ -168,8 +168,6 @@ nav {  position: fixed;
 
 @media only screen and (max-width: 480px){
 	
-header {display: flex;min-height: 10vh; max-height: 10vh; justify-content: center; align-items: center;	
-		background-color: #006494; margin: 50px 20px; }
 
 nav {  position: fixed;
 	   background-color: #13293D; 
@@ -177,7 +175,7 @@ nav {  position: fixed;
 	   text-align: center; 
 	   width: 100%;
 	   top: 0; left: 0; right: 0;
-	   height: 230px;
+	   height: 220px;
 	  
 	       
 } 
@@ -208,6 +206,7 @@ nav ul ul li {border: 1px solid #13293D;
 		 }
 		 
 nav li:hover ul { display: block; }
-}
+
 
 aside {display: block; float: left; width: 19vw; background-color: #13293D; margin: 0 0 30px 20px; color: white; padding: 0 10px; font-size: .95em}
+}
