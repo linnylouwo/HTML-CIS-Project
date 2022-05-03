@@ -154,7 +154,7 @@ nav {font-size: 80%}
 }
 
   
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 
 nav {  position: fixed;
 	   background-color: #13293D; 
@@ -162,7 +162,7 @@ nav {  position: fixed;
 	   text-align: center; 
 	   width: 100%;
 	   top: 0; left: 0; right: 0;
-		height: 107px;}
+		height: 113px;}
 nav li {
 display: block; padding: 0 30px 0 30px; }
 }
