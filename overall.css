@@ -165,4 +165,6 @@ nav {  position: fixed;
 		height: 160px;}
 nav li {
 display: block; padding: 0 30px 0 30px; }
+aside {display: block; float: left; width: 18vw; background-color: #13293D; margin: 0 0 30px 20px; color: white; padding: 0; font-size: .95em}
+
 }
