@@ -1,0 +1,168 @@
+/* BODY STYLES */
+
+body {font-family: arial, sans-serif}
+
+/*MISC*/
+h1 {text-align: center; color: white; font-size: 2.7em; padding: 0; }
+h2 {text-align: center;color: #13293D}
+
+.Apar {padding: 0 8px 0 10px}
+.Abullet {text-indent: 20px}
+
+span {color: #ffffff}
+
+
+header {display: flex;min-height: 10vh; max-height: 10vh; justify-content: center; align-items: center;	
+		background-color: #006494; margin: 10px 20px; }
+
+
+
+#wrapper {display: grid; grid-template-columns: 20vw 78vw; grid-template-rows: 50px 100px auto 50px; 
+			grid-template-areas: "nav nav" "header header" "aside main" "footer footer";}
+header {grid-area: header}
+nav {grid-area: nav}
+aside {grid-area: aside}
+main {grid-area: main}
+footer {grid-area: footer}
+
+aside {display: block; float: left; width: 18vw; background-color: #13293D; margin: 0 0 30px 20px; color: white; padding: 0 10px; font-size: .95em}
+
+#firstartist {display: block; background-color: #E8F1F2; margin: 0 20px 30px 50px; padding: 20px;}
+#div2 {display: block; width: 36vw; margin:0; padding: 0 1em }
+
+#hh {float: right; margin: 0 0 5px 30px; border: 1px solid #000000;box-shadow: 6px 6px #006494}
+.clearright {clear: right; }
+
+
+#gallery {display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; background-color: #CEDFD9; margin: 0 20px 30px 50px;}
+		
+
+#linda {padding: 0 0 0 10px; max-width: 100%; height: auto; margin: auto; box-shadow: none; border: none}
+
+img {margin: 1em; box-shadow: 10px 10px 10px #777; border: 5px solid #13293D; max-width:100%; height: auto; }
+
+figcaption {text-align: center}
+
+th, td {border: 1px solid #000;}
+table {border: 2px solid #000; margin: 0 auto; width: 35vw; padding: 0}
+table, th, td {background-color: #ffffff; font-family: arial, sans-serif;padding: 3px}
+caption {color: #EB4511; font-weight: bold; font-size: 1.25em; margin-bottom: 10px}
+
+
+
+/*HOLD #ResDiv1 {width: 17vw; margin: 60px auto; height: 50px; padding: 35px 10px 0 10px}
+#ResDiv1 {width: 98vw; height: 50px; margin: 35px 20px 35px 20px; padding: 20px}*/
+#ResDiv1 {padding:7vh 0 1.5vh 0 }
+#ResDiv2 {overflow-x: auto; width: 60vw; background-color: #E8F1F2; margin: auto; padding: 4em; border: 1px solid #13293D }
+#ResDiv3 {width: 60vw; background-color: #CEDFD9; margin: 20px auto 50px auto; padding: 4em; border: 1px solid #13293D}
+form {width: 40vw; margin-left: auto; margin-right: auto}
+
+
+
+/* NAVIGATION */
+
+
+nav {  position: fixed;
+	   background-color: #13293D; 
+	   font-size: 1em;
+	   text-align: center; 
+	   width: 100%;
+	   top: 0; left: 0; right: 0;
+	   height: 40px;
+	  
+	       
+} 
+nav ul { list-style-type: none; 
+}
+
+nav li {
+      display: inline-block; padding: 0 30px 0 30px; 
+	 
+}
+nav a { text-decoration: none; 
+       display: block;
+}
+nav a:link { color: #ffffff; }
+nav a:visited { color: #CEDFD9; }
+nav a:hover {  color: #006494;}
+
+nav ul ul { position: absolute;
+            background-color: #EB4511;
+            text-align: left;
+            display: none; font-weight: bold;
+			padding: 0;}
+			
+nav ul ul li {border: 1px solid #13293D;
+         display: block; font-size: 75%;
+         width: 10em; 
+         padding: 2px 10px 2px 10px; 
+		 }
+		 
+nav li:hover ul { display: block; }
+
+
+	  
+	  
+	  
+/*FOOTER STYLES*/
+
+footer { background-color: #13293D;
+         width: 100%;
+         font-size: 75%;
+         text-align: center;	
+         color: #EAEAEA;
+         position: fixed;
+         bottom: 0;	left: 0;
+		 padding: .5em;
+		 }	
+	  
+	  
+	  
+
+/*HOLDS
+@media only screen and (max-width: 1460px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1100px) {
+	
+@media only screen and (max-width: 650px) {
+  
+nav {font-size: 80%}
+}
+
+}
+*/
+
+
+
+@media only screen and (max-width: 950px) {
+ nav {font-size: 90%}
+
+}
+
+
+@media only screen and (max-width: 750px) {
+  
+nav {font-size: 80%}
+.Apar {padding: 0 8px 0 10px; font-size: 80%}
+.Abullet {text-indent: 0; font-size: 80%}
+
+
+}
+
+  
+@media only screen and (max-width: 600px) {
+
+nav {  position: fixed;
+	   background-color: #13293D; 
+	   font-size: 1em;
+	   text-align: center; 
+	   width: 100%;
+	   top: 0; left: 0; right: 0;
+		height: 107px;}
+nav li {
+display: block; padding: 0 30px 0 30px; }
+}
