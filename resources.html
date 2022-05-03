@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Resources</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="overall.css">
+</head>
+
+
+<body>
+
+<!--NAVIGATION-->
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#">Art Movements</a>
+			<ul>
+				<li><a href="ArtsCrafts.html">Arts and Crafts</a></li>
+				<li><a href="ArtDeco.html">Art Deco</a></li>
+				<li><a href="ArtNouveau.html">Art Nouveau</a></li>
+				<li><a href="bauhaus.html">Bauhaus</a></li>
+				<li><a href="Contemporary.html">Contemporary</a></li>
+				<li><a href="dada.html">Dada</a></li>
+				<li><a href="PopArt.html">Pop Art</a></li>
+				<li><a href="Surrealism.html">Surrealism</a></li>
+			</ul>	
+			</li>
+		<li><a href="#">Artists</a>
+			<ul>
+				<li><a href="PopArt.html">Evelyne Axell</a></li>
+				<li><a href="bauhaus.html">Friedl Dicker-Brandeis</a></li>
+				<li><a href="dada.html">Hannah Hoch</a></li>
+				<li><a href="ArtDeco.html">Tamara de Lempicka</a></li>
+				<li><a href="Contemporary.html">Emily May Smith</a></li>
+				<li><a href="Surrealism.html">Dorthea Tanning</a></li>
+				<li><a href="ArtsCrafts.html">Phoebe Anna Traquair</a></li>
+				<li><a href="ArtNouveau.html">Gerda Wegener</a></li>
+			</ul>	
+		</li>
+		<li><a href="resources.html">Resources</a></li>
+		<li><a href="AboutMe.html">About Me</a></li>
+		
+	</ul>
+</nav>
+
+<div id="ResDiv1">
+<header>
+	<h1>Resources</h1>
+</header>
+</div>
+
+<main>
+<div id="ResDiv2">
+	<table>
+		<caption>Websites Featuring Woman Artists</caption>
+		<thead> 
+		<tr>
+			<th>Website Name</th>
+			<th>URL</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Guerrilla Girls</td>
+			<td><a href="https://www.guerrillagirls.com">www.guerrillagirls.com</td>
+		</tr>
+		<tr>
+			<td>The Great Women Artists</td>
+			<td><a href="https://www.thegreatwomenartists.com">www.thegreatwomenartists.com</td>
+		</tr>
+		<tr>
+			<td>National Museum of Women in the Arts</td>
+			<td><a href="https://nmwa.org">www.nmwa.org</a></td>
+		</tr>
+		<tr>
+			<td>American Women Artists</td>
+			<td><a href="https://americanwomenartists.org">www.americanwomenartists.org</a></td>
+		</tr>
+		<tr>
+			<td>Connecticut Women Artists, Inc. </td>
+			<td><a href="http://www.ctwomenartists.org">www.ctwomenartists.org</a></td>
+		</tr>
+		<tr>
+			<td>National Association of Women Artists</td>
+			<td><a href="http://thenawa.org">www.thenawa.org</a></td>
+		</tr>
+		<tr>
+			<td>Art Herstory</td>
+			<td><a href="https://artherstory.net">www.artherstory.net</a></td>
+		</tr>
+		<tr>
+			<td>Art Girl Rising</td>
+			<td><a href="https://artgirlrising.com">www.artgirlrising.com</a></td>
+		</tr>
+		</tbody>
+		</table>
+</div>
+<div id="ResDiv3">
+<h2>Sign Up for my Newsletter!</h2>
+<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+		Name: <input type="text" name="name" id="name" maxlength="30"><br><br>
+		Email: <input type="email" name="email" id="email" required><br><br>
+		
+		<fieldset>
+			<legend>Select Your Favorite Types of Art:</legend>
+			<input type="checkbox" name="ArtsCrafts" id="ArtsCrafts" value="yes">Arts and Crafts<br>
+			<input type="checkbox" name="ArtDeco" id="ArtDeco" value="yes">Art Deco<br>
+			<input type="checkbox" name="ArtNouveau" id="ArtNouveau" value="yes">Art Nouveau<br>
+			<input type="checkbox" name="Contemporary" id="Contemporary" value="yes">Contemporary<br>
+			<input type="checkbox" name="Bauhaus" id="Bauhaus" value="yes">Bauhaus<br>
+			<input type="checkbox" name="Dada" id="Dada" value="yes">Dada<br>
+			<input type="checkbox" name="PopArt" id="PopArt" value="yes">Pop Art<br>
+			<input type="checkbox" name="Surrealism" id="Surrealism" value="yes">Surrealism<br>
+			<input type="checkbox" name="other" id="other" value="yes">Other
+		</fieldset>
+		<br>
+		
+		<fieldset>
+		<legend>How often do you go to art museums?:</legend>
+		<input type="radio" name="purchase" id="weekly" value="1">Weekly<br>
+		<input type="radio" name="purchase" id="monthly" value="2">Monthly<br>
+		<input type="radio" name="purchase" id="yearly" value="3">A few times a year<br>
+		<input type="radio" name="never" id="never" value="4">Never Purchase
+		</fieldset>
+		<br>
+		
+		What is your favorite art medium?<br>
+		<select size="3" name="medium" id="medium">
+			<option value="pencil">Graphic Pencils</option>
+			<option value="Ink">Ink</option>
+			<option value="Charcoal">Charcoal</option>
+			<option value="watercolor">Watercolor</option>
+			<option value="Oil">Oil Painting</option>
+		</select>
+		<br><br>
+		
+		Comments:<br>
+		<textarea style="max-width: 50vw" name="comments" id="comments" cols="60" rows="3"></textarea>
+		
+		<br><br>
+		<input type="submit">
+		<input type="reset">
+		<br><br>	
+	</form>
+
+</div>
+
+
+
+</main>
+	
+<!--FOOTER-->
+<footer>
+	&copy; Copyright 2022 Linda Johnson<br>
+	<a style="text-decoration: none; color: #006494" href="mailto:lmjohnson7159@hawkmail.hfcc.edu">lmjohnson7159@hawkmail.hfcc.edu</a>
+
+</footer>
+
+
+</body>
+</html>
