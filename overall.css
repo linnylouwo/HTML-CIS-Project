@@ -209,3 +209,5 @@ nav ul ul li {border: 1px solid #13293D;
 		 
 nav li:hover ul { display: block; }
 }
+
+aside {display: block; float: left; width: 19vw; background-color: #13293D; margin: 0 0 30px 20px; color: white; padding: 0 10px; font-size: .95em}
